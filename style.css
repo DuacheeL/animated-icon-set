@@ -13,6 +13,7 @@ body {
   display: grid;
   place-content: center;
   height: 100vh;
+  background: black;
   
 }
 
@@ -36,7 +37,56 @@ svg {
 }
 
 
-#folder {
+#dataFolder {
+	
+	opacity: 0;
+}
+
+.leftBracket, .rightBracket {
+	stroke: cyan;
+  opacity: 0;
+}
+
+.folder {
 	stroke: pink;
 
 }
+
+#contact {
+	stroke: red;
+}
+
+.rightTick, .leftTick {
+	stroke: red;
+}
+
+.body, .head {
+	stroke: white;
+}
+
+
+.middleLine2 {
+	stroke: cyan;
+}
+
+#globe {
+	stroke: #1F51FF;
+}
+
+
+
+@keyframes spinGlobe {
+  0% {
+    transform: rotate(0deg); 
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.circle, .middle, .middleLine {
+  animation: spinGlobe 8s linear infinite; 
+  transform-origin: center; 
+
+
